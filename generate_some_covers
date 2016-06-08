@@ -3,6 +3,6 @@
 # Generate a few simple (non-incremental?) covers
 
 for i in `seq 0 5`; do 
-    SO3_Grid 1 $i
+    generate_grid 1 $i
     mv data.qua simple_${i}.qua
 done
