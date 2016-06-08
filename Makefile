@@ -26,16 +26,16 @@
 
 SO3_Grid: main.o simple_grid.o layered_grid.o hopf2quat.o grid_s1.o nside2npix.o pix2ang_nest.o mk_pix2xy.o
 	g++ -o SO3_Grid main.o simple_grid.o layered_grid.o hopf2quat.o grid_s1.o nside2npix.o pix2ang_nest.o mk_pix2xy.o 
-main.o: main.C grid_generation.h
-	g++ -c  main.C -lm
-simple_grid.o:simple_grid.C grid_generation.h
-	g++ -c  simple_grid.C -lm
-layered_grid.o: layered_grid.C grid_generation.h
-	g++ -c layered_grid.C
-hopf2quat.o: hopf2quat.C grid_generation.h
-	g++ -c  hopf2quat.C -lm
-grid_s1.o: grid_s1.C grid_generation.h
-	g++ -c  grid_s1.C -lm
+main.o: main.cpp grid_generation.h
+	g++ -c  main.cpp -lm
+simple_grid.o:simple_grid.cpp grid_generation.h
+	g++ -c  simple_grid.cpp -lm
+layered_grid.o: layered_grid.cpp grid_generation.h
+	g++ -c layered_grid.cpp
+hopf2quat.o: hopf2quat.cpp grid_generation.h
+	g++ -c  hopf2quat.cpp -lm
+grid_s1.o: grid_s1.cpp grid_generation.h
+	g++ -c  grid_s1.cpp -lm
 nside2npix.o: nside2npix.c
 	gcc -c  nside2npix.c
 pix2ang_nest.o: pix2ang_nest.c 
