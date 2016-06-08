@@ -2,3 +2,9 @@
 *.qua
 SO3_Grid
 *.qua
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+generate_grid
+libso3_grid
+libso3_grid.a
